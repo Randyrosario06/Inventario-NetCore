@@ -1,0 +1,22 @@
+﻿@model WebApplication4.ViewModels.InicioViewModel
+
+@{
+    ViewData["Title"] = "Borrar";
+}
+
+<h1>Eliminar plato</h1>
+
+<div class="container-fluid">
+    <ol class="list-group">
+        @foreach (var a in Model.comidas)
+    {
+
+        <li class="list-group-item">
+        @a.Nombre <a asp-action="Deleted" asp-controller="Menu"
+                     asp-route-id="@a.ComidaId" class="btn-sm btn-danger">Borrar plato</a>
+            <a asp-page="/Comidas/Edit" asp-route-id="@a.ComidaId " class="btn-sm btn-default">Editar plato</a>
+        </li>
+    }
+
+    </ol>
+</div>

@@ -1,0 +1,54 @@
+﻿@model WebApplication4.Models.Personas
+
+@{
+    ViewData["Title"] = "Registarse";
+}
+
+<div class="text-center">
+    <div>
+        <h1>Registrar Uusuario</h1>
+    </div>
+    <div>
+        <form method="post">
+            <div class="form-group-lg ">
+                <div>
+                    <label></label>
+                </div>
+                <div class="form-group-lg">
+                    <input asp-for="Nombre" class=" text-center form-control" placeholder="Ingrese nombre" />
+                    <span asp-validation-for="Nombre"></span>
+                </div>
+                <div class=" form-group-lg">
+                    <label ></label>
+                </div>
+                <div class="form-group-lg">
+                    <input asp-for="Apellido" class=" text-center form-control" placeholder="Ingrese apellido" />
+                </div>
+                <div>
+                    <label ></label>
+                </div>
+                <div class="form-group-lg">
+                    <input asp-for="Usuario" class=" text-center form-control" placeholder="Ingrese usuario" />
+                    <span asp-validation-for="Usuario"></span>
+                </div>
+                <div class=" form-group-lg">
+                    <label></label>
+                </div>
+                <div class="form-group-lg">
+                    <input asp-for="Pass" class=" text-center form-control" placeholder="Ingrese contraseña" />
+                    <span asp-validation-for="Pass"></span>
+                </div>
+                <div class=" form-group-lg">
+                    <label></label>
+                </div>
+               
+                <div>
+                    <label>  </label>
+                </div>
+                <div class=" form-group-lg ">
+                    <input type="submit" name="regist" value="Registrar" class="btn-default btn-lg form-control" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

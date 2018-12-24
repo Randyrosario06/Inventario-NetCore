@@ -1,0 +1,40 @@
+﻿
+@model WebApplication4.ViewModels.InicioViewModel
+
+@{
+    ViewData["Title"] = "Menu";
+}
+<div class="container-fluid">
+    <div>
+        <h1>Todos nuestros platos</h1>
+    </div>
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Descripcion</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            @foreach (var a in Model.comidas)
+            {
+                <tbody>
+
+                    <tr>
+                        <td>@a.ComidaId</td>
+                        <td>@a.Nombre</td>
+                        <td>RD$ @a.Precio</td>
+                        <td>@a.Descripcion</td>
+                        <td>@a.Platos</td>
+                      
+                    </tr>
+
+                </tbody>
+            }
+        </table>
+    </div>
+
+</div>

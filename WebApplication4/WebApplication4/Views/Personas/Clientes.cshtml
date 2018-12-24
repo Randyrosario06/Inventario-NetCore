@@ -1,0 +1,21 @@
+﻿@model WebApplication4.ViewModel.InicioViewClientes
+
+@{ 
+    ViewData["Title"] = "Clientes";
+}
+
+<div>
+    <h1>Lista de clientes</h1>
+    <div class="container">
+        <ul class="list-group">
+            @foreach (var a in Model.clientes)
+            {
+
+                <li class="list-group-item">@a.Cedula---@a.Nombre---@a.Apellido</li>
+
+            }
+
+        </ul>
+    </div>
+
+</div>

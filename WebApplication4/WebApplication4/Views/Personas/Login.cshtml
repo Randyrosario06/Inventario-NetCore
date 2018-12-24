@@ -1,0 +1,35 @@
+﻿@model WebApplication4.Models.Personas
+
+@{ 
+    ViewData["Title"] = "Login";
+}
+
+<div class="text-center">
+    <div>
+        <h1>Login</h1>
+    </div>
+    <div>
+        <form method="post" >
+            <div class="form-group-lg ">
+                <div>
+                    <label></label>
+                </div>
+            <div class="form-group-lg">
+                <input asp-for="Usuario" class=" text-center form-control" placeholder="Ingrese usuario" />
+            </div>
+                <div class=" form-group-lg">
+                    <label> </label>
+                </div>
+            <div class="form-group-lg">
+                <input asp-for="Pass" class=" text-center form-control" placeholder="Ingrese contraseña" />
+            </div>
+            <div>
+                <label>  </label>
+            </div>
+            <div class=" form-group-lg ">
+                <input type="submit" name="login" value="Login" class="btn-default btn-lg form-control" />
+            </div>
+    </div>
+    </form>
+</div>
+</div>
